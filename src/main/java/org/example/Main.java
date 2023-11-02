@@ -3,20 +3,9 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Screw screw1 = new Screw();
-        screw1.type = "torx";
-        screw1.length = 50;
-        screw1.width = 4.0;
-
-        Screw screw2 = new Screw();
-        screw2.type = "torx";
-        screw2.length = 50;
-        screw2.width = 5.0;
-
-        Screw screw3 = new Screw();
-        screw3.type = "kreuzschlitz";
-        screw3.length = 40;
-        screw3.width = 3.0;
+        Screw screw1 = new Screw("torx", 50, 4.0);
+        Screw screw2 = new Screw("torx", 50, 5.0);
+        Screw screw3 = new Screw("kreuzschlitz", 40, 3.0);
 
         printScrew(screw1);
         printScrew(screw2);
